@@ -1,0 +1,4343 @@
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[CODE]
+# Find maximum of two numbers
+def max_num(a, b):
+    return a if a > b else b
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[CODE]
+# Add two numbers
+def add(a, b):
+    return a + b
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[HI_GK]
+Q: ताजमहल कहाँ स्थित है?
+A: आगरा
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[HI_GK]
+Q: भारत के पहले प्रधानमंत्री कौन थे?
+A: पंडित जवाहरलाल नेहरू
+
+[EN_GK]
+Q: Who wrote 'Hamlet'?
+A: William Shakespeare
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[EN_GK]
+Q: Which planet is called the Red Planet?
+A: Mars
+
+[CODE]
+# Check if a number is even
+def is_even(n):
+    return n % 2 == 0
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[EN_GK]
+Q: What is the boiling point of water?
+A: 100°C
+
+[CODE]
+# Check for prime number
+def is_prime(n):
+    return all(n % i != 0 for i in range(2, n)) if n > 1 else False
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[HI_GK]
+Q: गांधी जयंती कब मनाई जाती है?
+A: 2 अक्टूबर
+
+[HI_GK]
+Q: हिमालय किस दिशा में स्थित है?
+A: उत्तर
+
+[EN_GK]
+Q: What is the currency of Japan?
+A: Yen
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[HI_GK]
+Q: भारत का राष्ट्रीय पक्षी कौन है?
+A: मोर
+
+[EN_GK]
+Q: What is the capital of France?
+A: Paris
+
+[CODE]
+# Calculate factorial
+def factorial(n):
+    return 1 if n == 0 else n * factorial(n-1)
+

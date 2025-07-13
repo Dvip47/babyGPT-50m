@@ -1,0 +1,88 @@
+Tokenizer Line-by-line walkthrough (teacher mode)
+
+import os
+import tiktoken
+import numpy as np
+from tqdm import tqdm
+🧑‍🏫 We’re importing the tools we need.
+
+os: to create folders and handle file paths.
+
+tiktoken: the GPT-style tokenizer.
+
+numpy: for fast handling of large arrays.
+
+tqdm: for progress bars (not used yet, but often useful).
+
+def prepare_tokenizer_and_bins(...):
+🧑‍🏫 We define a function that takes a text file, converts it into token IDs, splits it, and saves it.
+
+
+enc = tiktoken.get_encoding(vocab_model)
+🧑‍🏫 Here, we load the GPT-2 tokenizer.
+This gives us a tool to convert text into numbers (token IDs). Each token is a piece of a word.
+
+
+with open(input_path, 'r') as f:
+    data = f.read()
+🧑‍🏫 We open and read the full text file into memory as one big string.
+Imagine reading a whole novel and putting it in a variable.
+
+
+tokens = enc.encode(data)
+🧑‍🏫 This line converts that big string into a list of integers.
+Each number represents a token — a piece of text. For example, "hello" might become [15496].
+
+
+split_idx = int(len(tokens) * train_split)
+train_ids = tokens[:split_idx]
+val_ids = tokens[split_idx:]
+🧑‍🏫 We divide the token list: 90% for training, 10% for validation.
+Why? So the model learns on the training data and we test it on unseen validation data.
+
+
+train_ids = np.array(train_ids, dtype=np.uint16)
+val_ids = np.array(val_ids, dtype=np.uint16)
+🧑‍🏫 We convert token lists into NumPy arrays (very fast and memory-efficient).
+Using uint16 saves space. This is important if you’re training on millions of tokens.
+
+
+os.makedirs(output_dir, exist_ok=True)
+🧑‍🏫 Make sure the folder for saving data exists.
+If it doesn’t, this line will create it.
+
+
+train_ids.tofile(train_out)
+val_ids.tofile(val_out)
+🧑‍🏫 Save both arrays directly as .bin binary files.
+Why binary? Because it's fast for training. The model can load data quickly.
+
+
+meta = {
+    'vocab_size': enc.n_vocab,
+    'block_size': block_size,
+    'tokenizer': vocab_model
+}
+🧑‍🏫 We store some important metadata:
+
+vocab_size: how many unique tokens the tokenizer knows.
+
+block_size: how many tokens the model looks at in one shot.
+
+tokenizer: which tokenizer we used (so we can decode later).
+
+
+with open(..., 'wb') as f:
+    pickle.dump(meta, f)
+🧑‍🏫 We save the metadata using pickle (a way to save Python dictionaries to disk).
+
+
+print(...)  # print summary
+🧑‍🏫 Finally, we print a summary: how many tokens went to training and validation, and confirm files were saved.
+
+👨‍🏫 Summary
+So, Vipin, this script bridges the gap between text and training.
+Without this step, your GPT model has no idea how to read your data.
+
+You can now use the .bin files and meta.pkl in your training script like a pro.
+

@@ -1,0 +1,9 @@
+data/*/*.bin
+data/*/meta.pkl
+
+out/
+
+__pycache__/
+*.pyc
+
+*.pt

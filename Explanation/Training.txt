@@ -1,0 +1,170 @@
+# training 
+#Imports (Bringing in all necessary tools)
+import os
+import pickle
+os: For handling file paths and directories.
+
+pickle: Used to load saved Python objects — here, it loads your tokenizer's metadata (meta.pkl).
+
+from config.config_50m import *
+✅ This brings in all the training and model settings you wrote in config/config_50m.py, like n_layer, block_size, learning_rate, etc.
+
+from model import GPT, GPTConfig
+This imports your GPT model class and its configuration.
+
+GPTConfig: defines model architecture.
+
+GPT: actually builds the model using that config.
+
+from trainer import Trainer, TrainerConfig
+These classes handle training logic.
+
+TrainerConfig: defines how to train.
+
+Trainer: manages the full training loop (forward, backward, evaluate, save model, etc.).
+
+from dataset import get_batch
+This function fetches a mini-batch of training or validation data.
+
+Returns input tokens X and target tokens Y.
+
+import torch
+PyTorch is the deep learning engine powering it all.
+
+📦 Load Metadata (vocab and block size)
+print("📦 Loading metadata...")
+with open(f'data/{dataset}/meta.pkl', 'rb') as f:
+    meta = pickle.load(f)
+Loads your saved tokenizer metadata (created during preprocessing).
+
+meta.pkl includes:
+
+vocab_size: how many tokens in your vocabulary.
+
+block_size: how many tokens per sequence.
+
+vocab_size = meta['vocab_size']
+block_size = meta['block_size']
+print(f"📚 Vocab size: {vocab_size}, block size: {block_size}")
+Reads those two values from the loaded dictionary and prints them.
+
+Even if they were None in your config file, they are now real values.
+
+🧠 Create Model Config
+config = GPTConfig(
+    vocab_size=vocab_size,
+    block_size=block_size,
+    n_layer=n_layer,
+    n_head=n_head,
+    n_embd=n_embd,
+    dropout=dropout,
+    bias=bias
+)
+This constructs a blueprint for your GPT model.
+
+You pass in:
+
+How deep (n_layer)
+
+How wide (n_embd)
+
+How many heads (n_head)
+
+Whether to use bias
+
+How big input should be (block_size)
+
+How many tokens exist (vocab_size)
+
+Whether to apply dropout
+
+🧱 Build the Model
+model = GPT(config)
+This builds the actual neural network using the above config.
+
+print(f"🧠 Model initialized with {sum(p.numel() for p in model.parameters()) / 1e6:.2f}M parameters")
+This counts all trainable parameters in the model and prints size in millions.
+
+A way to confirm you’re training a 50M model or whatever size you expect.
+
+🖥️ Choose Device
+device = 'cuda' if torch.cuda.is_available() else 'cpu'
+model.to(device)
+Checks if you have a GPU (cuda). If not, use CPU.
+
+Moves the model to that device so it can train there.
+
+⚙️ Training Configuration
+tconf = TrainerConfig(
+    max_iters=max_iters,
+    batch_size=batch_size,
+    block_size=block_size,
+    learning_rate=learning_rate,
+    lr_decay_iters=lr_decay_iters,
+    warmup_iters=warmup_iters,
+    min_lr=min_lr,
+    device=device,
+    gradient_accumulation_steps=gradient_accumulation_steps,
+    out_dir=out_dir,
+    eval_interval=eval_interval,
+    eval_iters=eval_iters,
+    log_interval=log_interval
+)
+This sets up everything the Trainer class needs to know:
+
+How long to train (max_iters)
+
+How fast to learn (learning_rate)
+
+Where to save (out_dir)
+
+How often to log and evaluate
+
+How much to accumulate gradients before updating weights
+
+Think of this like the training manual for your AI student.
+
+🚀 Start Training
+trainer = Trainer(model, get_batch, tconf)
+Initializes the trainer with:
+
+The model
+
+The data loader (get_batch)
+
+All the training settings (tconf)
+
+print("🚀 Training begins...")
+trainer.train()
+Starts the actual training loop.
+
+Under the hood:
+
+Fetches data batches
+
+Runs forward pass
+
+Computes loss
+
+Backpropagates gradients
+
+Updates weights
+
+Evaluates and saves best model
+
+Logs everything
+
+✅ Summary
+This file does 4 main things:
+
+Loads tokenizer metadata.
+
+Builds the GPT model.
+
+Prepares training settings.
+
+Starts the training loop.
+
+This is your launch file.
+Like pressing the green "Run" button in PyTorch land.
+

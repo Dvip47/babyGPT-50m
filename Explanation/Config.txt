@@ -1,0 +1,147 @@
+#Config
+
+out_dir = 'out/babygpt_50m'
+👉 This is the folder where all the trained checkpoints, logs, and evaluation results will be saved.
+Think of it like your model’s diary — it keeps track of its progress here.
+
+🧪 eval_interval = 250
+👉 Every 250 training steps, your model will pause and evaluate itself using the validation dataset.
+
+It checks:
+
+"Am I improving?"
+
+"Is my validation loss going down?"
+
+📝 log_interval = 50
+👉 Every 50 steps, it prints out the training loss.
+Useful for monitoring if the model is learning or going crazy.
+
+🔁 eval_iters = 200
+👉 During evaluation, the model won't just look at 1 example — it will take 200 mini-batches and calculate the average loss.
+
+Why?
+
+To get a stable and accurate measurement of its performance.
+
+📊 wandb_log = False
+👉 This turns Weights & Biases logging OFF.
+Weights & Biases (wandb) is a tool for tracking training visually on a web dashboard.
+You can set this to True later to monitor your training live on wandb.ai.
+
+📁 wandb_project = 'babygpt-50m'
+📛 wandb_run_name = 'ft-run'
+These are just names:
+
+Project: your folder on W&B
+
+Run name: what this specific experiment is called.
+
+You're not using wandb now, so these are just placeholders.
+
+📚 dataset = 'multitask'
+👉 This tells your training script:
+“Look for training data inside data/multitask/”
+It will expect:
+
+train.bin
+
+val.bin
+
+meta.pkl
+
+All generated from your tokenizer step.
+
+🧠 Training Efficiency
+gradient_accumulation_steps = 4
+👉 We’re simulating a bigger batch size by:
+
+Doing 4 forward+backward passes
+
+Accumulating gradients
+
+Then updating weights
+
+Useful when GPU/CPU memory is limited.
+
+batch_size = 2
+👉 Only 2 examples are processed at once in each mini-batch.
+Very small, but sometimes necessary if memory is low.
+
+block_size = 256
+👉 Each input the model sees is 256 tokens long.
+It can only "see" this much at once.
+If your sentence is longer — it’s chopped.
+
+🏗️ Model Architecture (this defines the size of your GPT)
+n_layer = 10
+👉 10 Transformer blocks (like 10 floors of a building).
+More layers = more powerful but slower.
+
+n_head = 8
+👉 Each Transformer block has 8 attention heads.
+They learn different types of relationships between tokens (like who is related to who in the sentence).
+
+n_embd = 384
+👉 Each token is represented by a vector of size 384.
+This is the feature size — the “depth” of the token understanding.
+
+dropout = 0.1
+👉 Randomly disables 10% of neurons during training.
+Helps prevent overfitting (memorizing training set too closely).
+
+⚙️ Other Training Settings
+bias = False
+👉 Whether to use bias terms in linear layers.
+Setting it to False can make the model simpler and faster. Often used in small GPTs.
+
+vocab_size = None
+👉 This tells the model:
+"Get the vocab size from meta.pkl" (the file you saved during tokenization).
+Because you may change datasets or tokenizers.
+
+learning_rate = 3e-4
+👉 This controls how big each step is during learning.
+3e-4 = 0.0003 = moderate learning speed.
+
+max_iters = 3000
+👉 Model will train for 3000 steps and then stop.
+Think of this as number of chapters the model studies.
+
+lr_decay_iters = 3000
+👉 We start reducing the learning rate after these many steps.
+In your case, same as max_iters, so it’ll gradually decay throughout training.
+
+min_lr = 1e-5
+👉 Learning rate won’t drop below this value.
+Even at the end, the model keeps improving a little.
+
+warmup_iters = 200
+👉 For the first 200 steps, we slowly ramp up the learning rate.
+Prevents the model from being shocked by a big step in the beginning.
+
+⚙️ Compilation Flag
+compile = False
+👉 If using PyTorch 2.0 or later, you can compile the model for better speed.
+You’ve turned it off for now, which is fine.
+
+✅ Final Note
+This config makes your GPT model:
+
+Around 50 million parameters
+
+Trained with modest batch sizes
+
+Running for 3000 steps
+
+On a dataset called multitask
+
+Saved inside: out/babygpt_50m/
+
+🧑‍🏫 Vipin, treat this config like your recipe card.
+
+If you want a bigger model later — just increase n_layer, n_head, n_embd.
+
+If you want more training — increase max_iters.
+
+Let me know if you want a visual of the model size or graph of training steps.

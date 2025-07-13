@@ -1,0 +1,115 @@
+Step-by-step Explanation of model.py
+🔹 Imports
+
+import math, torch
+import torch.nn as nn
+import torch.nn.functional as F
+math: Normal math operations, like square root.
+
+torch: Main PyTorch library.
+
+torch.nn: Tools for building neural networks.
+
+torch.nn.functional: For functions like loss calculations (e.g., cross_entropy).
+
+🧩 SelfAttention class
+
+class SelfAttention(nn.Module):
+This class builds one multi-head self-attention layer — the heart of the transformer.
+
+Key components:
+
+self.n_head = n_head
+self.key = nn.Linear(n_embd, n_embd)
+self.query = nn.Linear(n_embd, n_embd)
+self.value = nn.Linear(n_embd, n_embd)
+We split the input into Key, Query, Value using linear layers.
+
+These are mathematical representations used in attention to calculate which words are important.
+
+Causal Mask
+
+mask = torch.tril(torch.ones(block_size, block_size)).unsqueeze(0).unsqueeze(0)
+self.register_buffer("mask", mask)
+This is a triangular mask to ensure the model can't "cheat" and look at future tokens.
+
+It forces the model to look only at past and current tokens — essential for generating text one step at a time.
+
+🔁 Forward pass for Attention
+
+def forward(self, x):
+    ...
+Converts x into keys, queries, and values for each head.
+
+Applies attention formula: Attention = softmax(Q * K^T / sqrt(dk)) * V
+
+Applies the mask so it doesn’t look ahead.
+
+Then combines the heads and projects it back to original shape.
+
+🔷 Block class (Transformer Block)
+
+class Block(nn.Module):
+Each Block = Self Attention + Feedforward Neural Net + LayerNorm
+
+
+self.sa = SelfAttention(...)
+self.ln1 = nn.LayerNorm(...)
+self.ff = nn.Sequential(...)
+self.ln2 = nn.LayerNorm(...)
+It applies:
+
+Attention → Add to input
+
+Feedforward → Add to previous result
+
+This "residual connection" helps in stable deep learning.
+
+⚙️ GPTConfig
+
+class GPTConfig:
+Just a simple config holder — stores number of layers, heads, vocab size, etc., and is passed to GPT.
+
+🧠 GPT Main Model
+
+class GPT(nn.Module):
+Now this is the actual GPT model. Think of this as the big brain made of many small blocks.
+
+Key components:
+
+self.tok_emb = nn.Embedding(cfg.vocab_size, cfg.n_embd)
+Converts token IDs to vector embeddings (a.k.a meaning vectors).
+
+
+self.pos_emb = nn.Parameter(torch.zeros(1, cfg.block_size, cfg.n_embd))
+Adds position info — like word #1, #2 etc. (because transformer doesn’t know order by default)
+
+
+self.blocks = nn.ModuleList([...])
+Builds N blocks (like N layers deep).
+
+
+self.head = nn.Linear(cfg.n_embd, cfg.vocab_size)
+Converts model output back to vocabulary size so it can predict the next token.
+
+🔁 forward()
+
+def forward(self, idx, targets=None):
+Takes input tokens (idx)
+
+Embeds them + adds position info
+
+Passes through transformer blocks
+
+Applies layer norm + final head
+
+If targets provided (in training), also calculates loss using cross_entropy
+
+
+return logits, loss
+✅ Summary in Human Words:
+Concept	Explanation
+SelfAttention	Learns how much to "pay attention" to previous words
+Block	Combination of attention and feedforward layers
+GPTConfig	Holds configuration like layer count, vocab size etc.
+GPT	The final full model that processes tokens and generates output
