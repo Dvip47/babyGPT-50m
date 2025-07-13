@@ -12,8 +12,8 @@ wandb_run_name = 'ft-run'
 dataset = 'multitask'
 gradient_accumulation_steps = 4
 batch_size = 2
-block_size = 64
-# block_size = 256
+# block_size = 64
+block_size = 256
 
 n_layer = 10
 n_head = 8
