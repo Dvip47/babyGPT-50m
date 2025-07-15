@@ -1,54 +1,51 @@
 # sample.py
-import torch, pickle, argparse
-from model import GPT, GPTConfig
-import tiktoken
+# ------------------------------------------------------------
+# Minimal inference script for your BabyGPT‑50M checkpoint.
+# ------------------------------------------------------------
+import torch, pickle, tiktoken
+from types import MethodType
 
-# ── CLI ─────────────────────────────────────────
-parser = argparse.ArgumentParser()
-parser.add_argument("--ckpt",   default="out/babygpt_50m/ckpt.pt")
-parser.add_argument("--max_new", type=int, default=120)
-parser.add_argument("--start",  default="[CODE]\n# Add two numbers\n")
-parser.add_argument("--temperature", type=float, default=1.0)
-parser.add_argument("--top_k",  type=int, default=None)
-args = parser.parse_args()
+# ---------- 1.  Load model + checkpoint ---------------------
+from model import GPTConfig, GPT            # <-- make sure model.py exists
 
-device = "cuda" if torch.cuda.is_available() else "cpu"
+ckpt_path = "out/babygpt_50m/ckpt.pt"
+ckpt = torch.load(ckpt_path, map_location="cpu")
 
-# ── tokenizer meta ─────────────────────────────
-with open("data/multitask/meta.pkl", "rb") as f:
-    meta = pickle.load(f)
-enc = tiktoken.get_encoding(meta["tokenizer"])
-
-# ── load checkpoint ────────────────────────────
-ckpt = torch.load(args.ckpt, map_location=device)
-cfg  = GPTConfig(**ckpt["model_args"])
-model = GPT(cfg).to(device)
-model.load_state_dict(ckpt["model"])
+config = GPTConfig(**ckpt["model_args"])
+model  = GPT(config)
+model.load_state_dict(ckpt["model"], strict=False)
 model.eval()
 
-# ── encode prompt ──────────────────────────────
-idx = torch.tensor([enc.encode(args.start)], dtype=torch.long).to(device)
+# ---------- 2.  Add a generate() helper if GPT lacks one ----
+@torch.no_grad()
+def _generate(self, idx, max_new_tokens, temperature=1.0, top_k=None):
+    for _ in range(max_new_tokens):
+        idx_cond = idx[:, -self.config.block_size:]  # crop context length
+        logits, _ = self(idx_cond)
+        logits = logits[:, -1, :] / temperature
 
-# ── generate loop ──────────────────────────────
-for _ in range(args.max_new):
-    # crop to block_size context
-    if idx.size(1) > cfg.block_size:
-        idx_cond = idx[:, -cfg.block_size:]
-    else:
-        idx_cond = idx
+        if top_k is not None:
+            v, _ = torch.topk(logits, top_k)
+            logits[logits < v[:, [-1]]] = -float("Inf")
 
-    logits, _ = model(idx_cond)
-    logits = logits[:, -1, :] / args.temperature
+        probs = torch.nn.functional.softmax(logits, dim=-1)
+        next_tok = torch.multinomial(probs, num_samples=1)
+        idx = torch.cat((idx, next_tok), dim=1)
+    return idx
 
-    if args.top_k:
-        v, _ = torch.topk(logits, args.top_k)
-        logits[logits < v[:, [-1]]] = -float("Inf")
+# attach only if not already present
+if not hasattr(GPT, "generate"):
+    model.generate = MethodType(_generate, model)
 
-    probs = torch.softmax(logits, dim=-1)
-    next_id = torch.multinomial(probs, num_samples=1)  # (1,1)
-    idx = torch.cat((idx, next_id), dim=1)
+# ---------- 3.  Tokenizer -----------------------------------
+enc = tiktoken.get_encoding("gpt2")         # same tokenizer used at training
 
-# ── decode & print ─────────────────────────────
-generated = enc.decode(idx[0].tolist())
-print("\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n")
-print(generated)
+def encode(text: str):  return enc.encode_ordinary(text)
+def decode(tokens):     return enc.decode(tokens)
+
+# ---------- 4.  Prompt & Generate ---------------------------
+prompt = "[EMAIL]\nQ: Follow‑up mail after job interview?\nA:"
+
+idx = torch.tensor(encode(prompt), dtype=torch.long)[None, ...]
+out = model.generate(idx, max_new_tokens=120)[0].tolist()
+print(decode(out))

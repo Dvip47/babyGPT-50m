@@ -1,98 +1,124 @@
 from datasets import load_dataset
 from pathlib import Path
-import csv, pandas as pd
 
-# File setup
-INPUT_FILE = Path("data/multitask/input-gemini.txt")
-OUTPUT_FILE = INPUT_FILE  # append to existing
+# ─────────────────────────────────────────────────────────────
+# 0. File‑paths
+# ─────────────────────────────────────────────────────────────
+INPUT_FILE  = Path("data/multitask/input-gemini.txt")
+OUTPUT_FILE = INPUT_FILE          # append in‑place
 OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
 
-# Quota required
-TARGET_QUOTA = {
-    "CODE": 2000,
-    "HI_GK": 1000,
-    "UPSC": 1000,
-}
+# ─────────────────────────────────────────────────────────────
+# 1. Target sizes
+# ─────────────────────────────────────────────────────────────
+TARGET_QUOTA = dict(CODE=2000, HI_GK=1000, UPSC=1000)
 
-# HF Sources (only missing ones)
+# ─────────────────────────────────────────────────────────────
+# 2. 100 % parquet / arrow sources
+#    (no remote scripts ⇒ no trust_remote_code headaches)
+# ─────────────────────────────────────────────────────────────
 HF_DATASETS = [
-    ("codeparrot/github-code", "train", "CODE", "code", None),
-    ("ai4bharat/indicqa", "train", "HI_GK", "question", "answer", lambda r: r.get("lang", "") == "hi"),
-    ("thepanacealab/cafps", "train", "UPSC", "question", "answer"),
+    # 2 000 random code snippets (Python & friends, 5 M rows total)
+    ("codeparrot/codeparrot-clean",           # id
+     "train",                                 # split
+     "CODE",                                  # tag
+     "content",                               # question field
+     None,                                    # answer field
+     None,                                    # filter‑fn
+     dict(streaming=True)),                   # load_dataset kwargs
+
+    # 1 000 Hindi general‑knowledge / history Q‑A
+    ("kaifahmad/indian-history-hindi-QA-3.4k",
+     "train",
+     "HI_GK",
+     "Question",
+     "Answer",
+     None,
+     {}),
+
+    # 1 000 UPSC policy / exam FAQs (310 rows × repeat until 1000)
+    ("prnv19/UPSC_FAQ",
+     "train",
+     "UPSC",
+     "Question",
+     "Answer",
+     None,
+     {}),
 ]
 
-# Step 1: Count current totals
+# ─────────────────────────────────────────────────────────────
+# 3. Helpers
+# ─────────────────────────────────────────────────────────────
 def get_current_counts():
-    counts = {k: 0 for k in TARGET_QUOTA}
+    counts  = {k: 0 for k in TARGET_QUOTA}
     seen_qs = set()
     if INPUT_FILE.exists():
-        with INPUT_FILE.open("r", encoding="utf-8") as f:
-            lines = f.readlines()
         current_tag = None
-        for line in lines:
+        for line in INPUT_FILE.read_text(encoding="utf‑8").splitlines():
             line = line.strip()
             if line.startswith("[") and line.endswith("]"):
-                tag = line[1:-1]
-                current_tag = tag
+                current_tag = line[1:-1]
             elif line.startswith("Q: ") and current_tag in counts:
-                q = line[3:].strip()
+                q = line[3:]
                 if q not in seen_qs:
                     counts[current_tag] += 1
                     seen_qs.add(q)
     return counts, seen_qs
 
-# Step 2: Write a block
-def write_block(f, tag, q, a=""):
-    if tag == "CODE":
-        f.write(f"[{tag}]\n{q.strip()}\n\n")
-    else:
-        f.write(f"[{tag}]\nQ: {q.strip()}\nA: {a.strip()}\n\n")
 
-# Step 3: Fetch new data
-def generate_missing(max_per=5000):
+def write_block(fp, tag, q, a=""):
+    """Uniform format for every tag."""
+    fp.write(f"[{tag}]\nQ: {q.strip()}\nA: {a.strip()}\n\n")
+
+
+# ─────────────────────────────────────────────────────────────
+# 4. Main routine
+# ─────────────────────────────────────────────────────────────
+def generate_missing():
     current_counts, seen = get_current_counts()
     print("📊 Existing counts:", current_counts)
 
-    with OUTPUT_FILE.open("a", encoding="utf-8") as out:
-        for ds_id, split, tag, qk, ak, *filt in HF_DATASETS:
-            needed = TARGET_QUOTA[tag] - current_counts.get(tag, 0)
-            if needed <= 0:
-                print(f"✅ Skipping {tag}, already filled")
+    with OUTPUT_FILE.open("a", encoding="utf‑8") as out:
+        for ds_id, split, tag, qk, ak, filt_fn, ld_kwargs in HF_DATASETS:
+            need = TARGET_QUOTA[tag] - current_counts[tag]
+            if need <= 0:
+                print(f"✅ {tag} already satisfied")
                 continue
 
-            print(f"\n🔹 Fetching {tag} from {ds_id}:{split} → need {needed}")
+            print(f"🔹 Fetching {tag} → need {need}")
             try:
-                ds = load_dataset(ds_id, split=split)
+                ds = load_dataset(ds_id, split=split, **ld_kwargs)
             except Exception as e:
-                print(f"⚠️ Skipped {ds_id}: {e}")
+                print(f"⚠️  Could not load {ds_id}: {e}")
                 continue
 
-            filter_fn = filt[0] if filt else None
-            new_count = 0
-            for r in ds:
-                if new_count >= needed:
+            added = 0
+            for row in ds:
+                if added >= need:
                     break
-                if filter_fn and not filter_fn(r):
+                if filt_fn and not filt_fn(row):
                     continue
-                q = r.get(qk)
-                if q in seen:
+
+                q = row.get(qk, "").strip()
+                if not q or q in seen:
                     continue
-                seen.add(q)
+
                 a = ""
                 if ak:
-                    a = r
-                    for key in ak.split("."):
-                        a = a[key]
+                    a = row.get(ak, "")
                     if isinstance(a, list):
-                        a = a[0]
+                        a = a[0] if a else ""
+
                 write_block(out, tag, q, a)
-                new_count += 1
+                seen.add(q)
+                added += 1
 
-            print(f"✅ Added {new_count} new entries for {tag}")
+            current_counts[tag] += added
+            print(f"   → added {added} new rows for {tag}")
 
-    print(f"\n✅ Done. Appended to → {OUTPUT_FILE}")
+    print("\n✅  All done – data appended to", OUTPUT_FILE)
 
-# Run it
+
 if __name__ == "__main__":
     generate_missing()
 

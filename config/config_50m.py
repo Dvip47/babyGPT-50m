@@ -1,31 +1,37 @@
-# config/config_50m.py
+# ---------- IO ----------
+out_dir   = 'out/babygpt_mac_50m'
+dataset   = 'multitask'
 
-out_dir = 'out/babygpt_50m'
-eval_interval = 250
-log_interval = 50
-eval_iters = 200
+# ---------- logging ----------
+eval_interval = 500          # evaluate every 500 iters
+log_interval  = 50
+eval_iters    = 200
 
-wandb_log = False
-wandb_project = 'babygpt-50m'
-wandb_run_name = 'ft-run'
+# ---------- training schedule ----------
+batch_size  = 1              # tiny to fit CPU/MPS RAM
+gradient_accumulation_steps = 8   # global batch = 8
+block_size  = 128
 
-dataset = 'multitask'
-gradient_accumulation_steps = 4
-batch_size = 2
-# block_size = 64
-block_size = 256
+learning_rate   = 3e-4
+max_iters       = 60000       # let it run as long as you like
+max_iters       = 20000       # let it run as long as you like
+lr_decay_iters  = 60000
+warmup_iters    = 600
+min_lr          = 1e-5
+grad_clip       = 1.0
+weight_decay    = 0.1
+adamw_beta2     = 0.95
 
+# ---------- model ----------
 n_layer = 10
-n_head = 8
-n_embd = 384
-dropout = 0.1
+n_head  = 8
+n_embd  = 384
+dropout = 0.2                 # a bit more regularisation
+bias    = False
+vocab_size = None             # auto from meta.pkl
 
-bias = False
-vocab_size = None  # get from meta.pkl
-learning_rate = 3e-4
-max_iters = 3000
-lr_decay_iters = 3000
-min_lr = 1e-5
-warmup_iters = 200
-
-compile = False
+# ---------- speedups ----------
+# Intel/older Macs: leave float32 + CPU
+# Apple Silicon:  set dtype='float16', device='mps' via train.py arg
+dtype    = 'float32'
+compile  = False
